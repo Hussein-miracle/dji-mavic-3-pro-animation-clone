@@ -1,0 +1,34 @@
+.image-card{
+  height: 250vh;
+  overflow: hidden;
+  &__image-container{
+
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;   
+    width: 100%;
+    position: relative;
+    &--img{
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
+      &:not(.img0){
+        display: none;
+      }
+    }
+
+    // .container{
+    //   grid-column: 1 / -1;
+    //   grid-row: 2 / span 1;
+    // }
+
+  }
+
+  .hand{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    // width: 50%;
+    z-index: 15;
+    transform: translateY(5%) translateX(0%);
+  }
+}

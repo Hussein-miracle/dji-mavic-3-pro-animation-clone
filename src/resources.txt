@@ -1,0 +1,22 @@
+nav-color: #0A0A0A33
+
+header -bg : linear-gradient: background: linear-gradient(359.93deg, rgba(109, 0, 194, 0) -0.42%, rgba(109, 0, 194, 0.25) 49.04%, rgba(109, 0, 194, 0.1) 100.61%);
+
+
+black-purple: background: #0A0A0A;
+
+
+animation: pulsation 3s easeInOut 0s infinite alternate none;
+@keyframes pulsation {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

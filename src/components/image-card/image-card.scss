@@ -9,6 +9,9 @@
     width: 100%;
     position: relative;
     &--img{
+      object-fit: cover;
+      // height: 60vh;
+      // width: 90vw;
       grid-row: 1 / -1;
       grid-column: 1 / -1;
       &:not(.img0){

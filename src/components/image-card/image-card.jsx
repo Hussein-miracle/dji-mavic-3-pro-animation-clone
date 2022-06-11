@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React,{useLayoutEffect} from 'react';
 import { gsap , Back} from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import './image-card.scss';
@@ -112,7 +112,7 @@ gsap.registerPlugin(ScrollTrigger);
 const ImageCard = () => {
 
 
-  useEffect(()=>{
+  useLayoutEffect(()=>{
 
 
 
@@ -129,8 +129,8 @@ const ImageCard = () => {
         scrub:true,
         // end: "+=500",
         onUpdate:(self) =>{
-          let progress = self.progress;
-          console.log(progress, 'progress');
+          // let progress = self.progress;
+          // console.log(progress, 'progress');
 
         }
       }
@@ -254,7 +254,7 @@ const ImageCard = () => {
     t1.to('.img100',{scale:10}, "=8")
     t1.to('.img100',{scale:13}, "=10")
     t1.to('.img100',{scale:15}, "=12")
-    t1.to('.image-card__image-container--img',{display:'none'}, "=1")
+    // t1.to('.image-card__image-container--img',{display:'none'}, "=1")
     
 
   },[])
